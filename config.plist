@@ -12,8 +12,6 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>AddDTGP_0001</key>
-				<true/>
 				<key>AddHDMI_8000000</key>
 				<true/>
 				<key>AddIMEI_80000</key>
@@ -30,23 +28,7 @@
 				<true/>
 				<key>FIX_S3D_2000000</key>
 				<true/>
-				<key>FixAirport_4000</key>
-				<true/>
-				<key>FixDisplay_0100</key>
-				<true/>
-				<key>FixFirewire_0800</key>
-				<true/>
-				<key>FixHDA_8000</key>
-				<true/>
-				<key>FixHPET_0010</key>
-				<true/>
-				<key>FixIPIC_0040</key>
-				<true/>
-				<key>FixLAN_2000</key>
-				<true/>
 				<key>FixRegions_10000000</key>
-				<true/>
-				<key>FixShutdown_0004</key>
 				<true/>
 				<key>NewWay_80000000</key>
 				<true/>
@@ -60,13 +42,13 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
+				<string>DMAR</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>DMAR</string>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>Cpu0Ist</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -75,27 +57,25 @@
 				<string>CpuPm</string>
 			</dict>
 		</array>
-		<key>HaltEnabler</key>
-		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
 			<false/>
-			<key>EnableC6</key>
-			<true/>
 			<key>Generate</key>
 			<dict>
 				<key>CStates</key>
-				<true/>
+				<false/>
 				<key>PStates</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
+		<key>Arguments</key>
+		<string>-v npci=0x3000</string>
 		<key>DefaultVolume</key>
-		<string>MacHDD</string>
+		<string>Install OS X Legacy</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Log</key>
@@ -103,7 +83,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>25</integer>
 		<key>XMPDetection</key>
 		<false/>
 	</dict>
@@ -114,33 +94,12 @@
 			<key>Inject</key>
 			<string>No</string>
 		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>ATI</key>
-			<string>0x0</string>
-			<key>IMEI</key>
-			<string>0x0</string>
-			<key>IntelGFX</key>
-			<string>0x0</string>
-			<key>LAN</key>
-			<string>0x0</string>
-			<key>NVidia</key>
-			<string>0x0</string>
-			<key>SATA</key>
-			<string>0x0</string>
-			<key>WIFI</key>
-			<string>0x0</string>
-			<key>XHCI</key>
-			<string>0x0</string>
-		</dict>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<true/>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>DisableDrivers</key>
@@ -158,6 +117,8 @@
 		<string>en:0</string>
 		<key>Mouse</key>
 		<dict>
+			<key>DoubleClick</key>
+			<integer>300</integer>
 			<key>Enabled</key>
 			<true/>
 			<key>Mirror</key>
@@ -166,25 +127,20 @@
 			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<true/>
-			<key>Tool</key>
-			<true/>
-		</dict>
+		<true/>
+		<key>ScreenResolution</key>
+		<string>1600x900</string>
 		<key>Theme</key>
-		<string>metal</string>
+		<string>YosemiteLogin</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
-			<false/>
-			<key>Intel</key>
 			<true/>
+			<key>Intel</key>
+			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
@@ -194,6 +150,8 @@
 		<key>AppleRTC</key>
 		<true/>
 		<key>AsusAICPUPM</key>
+		<true/>
+		<key>KernelPm</key>
 		<true/>
 		<key>KextsToPatch</key>
 		<array>
@@ -219,19 +177,59 @@
 		<string>10</string>
 		<key>LogLineCount</key>
 		<integer>3000</integer>
+		<key>MLB</key>
+		<string>XA039VZA5RU02A59</string>
 		<key>MountEFI</key>
-		<string>Yes</string>
+		<string>No</string>
+		<key>ROM</key>
+		<string>800857E29EAE</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>BiosReleaseDate</key>
+		<string>03/17/10</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>IM111.88Z.0034.B02.1003171314</string>
+		<key>Board-ID</key>
+		<string>Mac-F2268DAE</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>02A5977AFCAA5F3</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>ChassisAssetTag</key>
+		<string>iMac-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>13</string>
+		<key>Family</key>
+		<string>iMac</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<false/>
+		<key>ProductName</key>
+		<string>iMac11,1</string>
+		<key>SerialNumber</key>
+		<string>XA039VZA5RU</string>
+		<key>SmUUID</key>
+		<string>F20F49FD-2BF7-4D00-8686-EC4834BC3CF1</string>
 		<key>Trust</key>
 		<false/>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
+		<true/>
+		<key>NoCaches</key>
 		<true/>
 	</dict>
 </dict>
