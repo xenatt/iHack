@@ -30,18 +30,6 @@
 					"unique" : "mix",
 					"suffix" : "XYL"
 				},
-        "smbios": {
-    		"SMbiosdate": "07/02/07",
-    		"SMbiosvendor": "Apple Computer, Inc.",
-    		"SMbiosversion": "MP21.88Z.007F.B06.0707021348",
-    		"SMboardproduct": "Mac-F4208DC8",
-    		"SMfamily": "Mac Pro",
-    		"SMmanufacter": "Apple Inc.",
-    		"SMmanufacturer": "Apple Computer, Inc.",
-    		"SMproductname": "MacPro2,1",
-    		"SMserial": "CK818932XYL",
-    		"SMsystemversion": "1.0"
-  		},
 	  	"description" : "Xeon 5300 Clovertown LGA 775,ATI Readeon X1900,NVidia GF 7300 GT",
 	  	"family" : "Mac Pro",
 	  	"image" : "/image/macpro.png",
@@ -77,18 +65,6 @@
 					"unique" : "mix",
 					"suffix" : "XYL"
 				},
-      	"smbios" :{
-  			"SMbiosdate": "02/29/08",
-  			"SMbiosvendor": "Apple Computer, Inc.",
-  			"SMbiosversion": "MP31.88Z.006C.B05.0802291410",
-  			"SMboardproduct": "Mac-F42C88C8",
-  			"SMfamily": "Mac Pro",
-  			"SMmanufacter": "Apple Inc.",
-  			"SMmanufacturer": "Apple Computer, Inc.",
-  			"SMproductname": "MacPro3,1",
-  			"SMserial": "CK938627XYL",
- 			"SMsystemversion": "1.0"
-		},
 	  	"description" : "Intel Xeon 5400 Harpertown LGA 775,ATI Radeon HD 2600 XT, NVidia GeForce 8800 GT",
 	  	"family" : "Mac Pro",
 	  	"image" : "/image/macpro.png",
@@ -124,7 +100,6 @@
 					"unique" : "mix",
 					"suffix" : "4PC"
 				},
-      
 	  	"description" : "Intel Xeon 5500 Gainestown LGA 775,NVidia GeForce GT 120 , ATI Radeon HD 4870",
 	  	"family" : "Mac Pro",
 	  	"image" : "/image/macpro.png",
@@ -163,18 +138,6 @@
 					"unique" : "mix",
 					"suffix" : "EUH"
 				},
-      	"smbios" : {
-			"SMbiosdate": "10/07/10",
-			"SMbiosvendor": "Apple Inc.",
-			"SMbiosversion": "MP51.88Z.007F.B03.1010071432",
-			"SMboardproduct": "Mac-F221BEC8",
-			"SMfamily": "Mac Pro",
-  "SMmanufacter": "Apple Inc.",
-  "SMmanufacturer": "Apple Inc.",
-  "SMproductname": "MacPro5,1",
-  "SMserial": "CK329A0TEUH",
-  "SMsystemversion": "1.0"
-},
 	  	"description" : "Intel Xeon 5400 Westmere, Gulftown LGA 1366,ATI Radeon HD 5770 ,5870",
 	  	"family" : "Mac Pro",
 	  	"image" : "/image/macpro.png",
@@ -1358,6 +1321,5 @@
    }
   }
 }
-        
         
         
